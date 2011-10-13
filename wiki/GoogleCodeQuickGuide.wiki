@@ -1,0 +1,62 @@
+#基本的 Google Code 操作介绍
+
+内容概要
+SVN的使用方法
+GoogleCode页面介绍
+
+打开http://code.google.com/p/hornerp/
+Project Home
+
+首先显示的是project home，页面左边的是这个项目的介绍，右边的License是说明使用的是什么开源协议，Labels是标签的意思，就是这个项目的关键词，Featured Downloads是列在首页的可供下载的文件，Featured Wiki Pages是列在首页的wiki（wiki一种多人协作的写作工具。Wiki站点可以有多人（甚至任何访问者）维护，每个人都可以发表自己的意见，或者对共同的主题进行扩展或者探讨。相当于一个团队的交流平台）。 Project Owners/members是项目的创建者和成员。
+Download
+
+第二个页面是Downloads，是一些可供下载的文件。Filename是文件名（必须是英文的），summary+Labels是概要加标签的意思，后面的那几列就不用说了吧。在Downloads里也可以点击New Downloads上传文件的。点击New Download后会出来上传页面，Summary是文件概要的意思，下面的File是要上传文件的本地路径（点击‘浏览’可以选择），Labels还是标签的意思，里面的那些标签我都翻译过了，将就着看吧。Submit File就是提交的意思，Discard就是取消了。 以上是Downloads页面的内容。
+Wiki
+
+第三个页面是Wiki，即一个交流平台，可以在里面发布新的话题（New page）、查看和参与别人创建的话题。在打开别人创建的话题后可以在下面的Enter a comment里面提交自己的意见。创建新话题时Page name填写话题的标题，Content里有很多格式的。写Content是#summary和空格后面的那行英文换成这个话题的概要。下面的内容删除即可，当然有空的话可以研究一下，怎么样这个Wiki页面可以更漂亮、清晰点。下面的Labels还是标签的意思。
+Issue
+
+第四个页面是issues，这是一个问题跟踪系统，在测试过程中会有一些问题需要报告给团队讨论，然后团队这个系统可以跟踪问题的解决情况。有了上面Downloads的基础，这个问题跟踪系统我就不翻译那几个词了。
+Source
+
+第五个页面是Source，这里是整个项目的源代码存放的地方。可以使用TortoiseSVN签出所有的源代码和项目中其他文件。tortoiseSVN非常方便，推荐大家使用，它把SVN的版本管理和Windows的资源管理器集成在一起。
+TortoiseSVN Guide
+
+1) 安装TortoiseSVN
+从 http://tortoisesvn.tigris.org/ 下载最新的TortoiseSVN客户端，一路安装下去即可。装好以后，在资源管理器右边的空白处右击鼠标，弹出的菜单中会看到SVN相关的菜单项。如下图所示：
+
+
+
+2) 认识版本库
+点击前文介绍的第五个页面，即Source页面。而后点击Browse,会看到如下的目录结构，这是Google Code自动生成的版本库目录。
+
+
+
+branches是分支版本的代码，trunk是主干版本代码，wiki放的是你在wiki页面看到的文件,tags放的东西尚不清楚。通常代码主要存放在trunk下，如果你离线写了wiki文件，则提交到wiki目录下。
+
+3) 生成SVN密码
+如果是本项目成员，在Source页面，点击提示中的googlecode.com password。这里生成的密码用于代码的签入签出(Checkout/Commit)。不是成员的话，看不见该提示语，不能生成密码。
+
+
+
+4) 建立本地工作目录
+建立本地工作目录，就是从版本库签出(Checkout)最新代码到本地目录。而后，你可以在本地修改文件、删除文件或目录、增加文件或目录。然后，提交(Commit)本地的修改到版本库。签出代码的操作是，新建一个空目录，如HornERP，选中该目录，选择【svn checkout】,签出的地址是https://hornerp.googlecode.com/svn/ ,这是版本库的根目录，你也可以只签出一个子目录，如https://hornerp.googlecode.com/svn/trunk/ 。而后弹出的窗口中，输入用户名和密码。用户名是你的google账户(比如mygoogle，不带@gmail.com),密码是前文生成的密码。 checkout操作如下图所示：
+
+
+
+
+
+传输完毕后，版本库里的代码和文档就全到了你本地了，你可以在本地修改，而后提交到Server上去。下图是你在本地看到的目录结构：
+
+
+
+5) 如何更新、提交和删除代码
+如果要从Server取得最新代码，右键点击【svn update】。【svn update】是最常用的操作。如果要增加目录或文件，只要把目录和文件放到你的本地工作目录。点击选中你的文件或目录，右键点击【TortoiseSVN | Add】,这个操作表示把文件增加到版本库，但尚未提交。你还要右键点击【svn commit】，这样你的文件就上传到Server，追加到了版本库。详细操作如下图：
+
+
+
+
+
+如果只是把本地修改提交到Server，右键点击【svn commit】即可。如果要删除目录或文件，右键点击【TortoiseSVN | Delete】，再右键点击【svn commit】则从Server上删除了文件。
+
+好了，以上就是用到的版本控制系统，大家尽快熟悉一下吧。熟悉这个系统最多消耗半天的时间哦，不是什么很难的东西，努力吧。 如果您想参与贡献的话，熟练操作 SVN（包括解决冲突）是申请本项目提交权限的基本条件。
