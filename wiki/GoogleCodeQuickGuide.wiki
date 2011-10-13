@@ -23,7 +23,7 @@ TortoiseSVN Guide
 
 1) 安装TortoiseSVN
 从 http://tortoisesvn.tigris.org/ 下载最新的TortoiseSVN客户端，一路安装下去即可。装好以后，在资源管理器右边的空白处右击鼠标，弹出的菜单中会看到SVN相关的菜单项。如下图所示：
-
+http://hornerp.googlecode.com/svn/wiki/img/QuickGuide/svn_01.gif
 
 
 2) 认识版本库
