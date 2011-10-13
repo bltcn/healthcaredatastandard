@@ -1,5 +1,4 @@
-#基本的 Google Code 操作介绍
-
+#labels 基本的GoogleCode操作介绍
 内容概要
 SVN的使用方法
 GoogleCode页面介绍
