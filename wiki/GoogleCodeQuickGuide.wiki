@@ -30,32 +30,33 @@ http://hornerp.googlecode.com/svn/wiki/img/QuickGuide/svn_01.gif
 点击前文介绍的第五个页面，即Source页面。而后点击Browse,会看到如下的目录结构，这是Google Code自动生成的版本库目录。
 
 
-
+http://hornerp.googlecode.com/svn/wiki/img/QuickGuide/svn_07.gif
 branches是分支版本的代码，trunk是主干版本代码，wiki放的是你在wiki页面看到的文件,tags放的东西尚不清楚。通常代码主要存放在trunk下，如果你离线写了wiki文件，则提交到wiki目录下。
 
 3) 生成SVN密码
 如果是本项目成员，在Source页面，点击提示中的googlecode.com password。这里生成的密码用于代码的签入签出(Checkout/Commit)。不是成员的话，看不见该提示语，不能生成密码。
 
 
-
+http://hornerp.googlecode.com/svn/wiki/img/QuickGuide/svn_08.gif
 4) 建立本地工作目录
 建立本地工作目录，就是从版本库签出(Checkout)最新代码到本地目录。而后，你可以在本地修改文件、删除文件或目录、增加文件或目录。然后，提交(Commit)本地的修改到版本库。签出代码的操作是，新建一个空目录，如HornERP，选中该目录，选择【svn checkout】,签出的地址是https://hornerp.googlecode.com/svn/ ,这是版本库的根目录，你也可以只签出一个子目录，如https://hornerp.googlecode.com/svn/trunk/ 。而后弹出的窗口中，输入用户名和密码。用户名是你的google账户(比如mygoogle，不带@gmail.com),密码是前文生成的密码。 checkout操作如下图所示：
 
 
 
 
-
+http://hornerp.googlecode.com/svn/wiki/img/QuickGuide/svn_02.gif
+http://hornerp.googlecode.com/svn/wiki/img/QuickGuide/svn_03.gif
 传输完毕后，版本库里的代码和文档就全到了你本地了，你可以在本地修改，而后提交到Server上去。下图是你在本地看到的目录结构：
 
 
-
+http://hornerp.googlecode.com/svn/wiki/img/QuickGuide/svn_04.gif
 5) 如何更新、提交和删除代码
 如果要从Server取得最新代码，右键点击【svn update】。【svn update】是最常用的操作。如果要增加目录或文件，只要把目录和文件放到你的本地工作目录。点击选中你的文件或目录，右键点击【TortoiseSVN | Add】,这个操作表示把文件增加到版本库，但尚未提交。你还要右键点击【svn commit】，这样你的文件就上传到Server，追加到了版本库。详细操作如下图：
 
 
 
 
-
+http://hornerp.googlecode.com/svn/wiki/img/QuickGuide/svn_05.gif
 如果只是把本地修改提交到Server，右键点击【svn commit】即可。如果要删除目录或文件，右键点击【TortoiseSVN | Delete】，再右键点击【svn commit】则从Server上删除了文件。
 
 好了，以上就是用到的版本控制系统，大家尽快熟悉一下吧。熟悉这个系统最多消耗半天的时间哦，不是什么很难的东西，努力吧。 如果您想参与贡献的话，熟练操作 SVN（包括解决冲突）是申请本项目提交权限的基本条件。
