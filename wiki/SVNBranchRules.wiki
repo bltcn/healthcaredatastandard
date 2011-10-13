@@ -1,0 +1,18 @@
+SVN 仓库分支规则
+
+/trunk 存放最新的文档，当系统达到一个较大的里程碑版本的发布要求时，特别是新版本包含了非向下兼容代码时，应在 /branches 下面建立一个相应的分支，以便维护旧版本代码。
+
+/tags 目录用于标记版本，每次系统版本号的提升不论大小都应该在 /tags 里记录。
+
+/branches 里的分支发现的 bug 均应该反向移植到影响的分支中，/branches 里的分支视情况而定，一般只维护最近稳定版本分支。
+
+/branches/codereview 这个特定分支用于源码阅读. 如果你在阅读源码遇到了问题以及阅读心得, 都欢迎在这里添加 comments. 这是一个源码阅读讨论平台, 禁止提交新版本. 有新的源码讨论需求, 可以同管理员联系添加
+例子
+
+    为 0.1 完善的地方在 branches\hornerp-0.1 分支里处理，trunk 里搞 0.2 的东西
+    当 0.2 可以发布了，再分支 hornerp-0.2，trunk 里继续开发 0.3 的 
+
+参考
+
+    TortoiseSVN 用户可以参考这篇文章
+    完整的 SVN 参考文档：http://www.subversion.org.cn/?action-channel-name-support#document 
