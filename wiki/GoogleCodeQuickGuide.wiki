@@ -45,6 +45,8 @@ http://hornerp.googlecode.com/svn/wiki/img/QuickGuide/svn_08.gif
 
 
 http://hornerp.googlecode.com/svn/wiki/img/QuickGuide/svn_02.gif
+
+
 http://hornerp.googlecode.com/svn/wiki/img/QuickGuide/svn_03.gif
 传输完毕后，版本库里的代码和文档就全到了你本地了，你可以在本地修改，而后提交到Server上去。下图是你在本地看到的目录结构：
 
