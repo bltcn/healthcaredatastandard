@@ -5,11 +5,11 @@ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 xsi:noNamespaceSchemaLocation="shiporder.xsd">
  <orderperson>George Bush</orderperson>
  <shipto>
-  <name>John Adams</name>
+  <name>aa</name>
   <address>Oxford Street</address>
   <city>London</city>
   <country>UK</country>
-  <ValueDate>20000101</ValueDate> 
+  <ValueDate>164127</ValueDate>
  </shipto>
  <item>
   <title>Empire Burlesque</title>
