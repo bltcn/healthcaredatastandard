@@ -9,7 +9,7 @@ xsi:noNamespaceSchemaLocation="shiporder.xsd">
   <address>Oxford Street</address>
   <city>London</city>
   <country>UK</country>
-  <ValueDate>164127</ValueDate>
+  <ValueDate>16:41:27</ValueDate>
  </shipto>
  <item>
   <title>Empire Burlesque</title>
